@@ -44,3 +44,10 @@
 1. При поиске лучшей модели был создай пайплайн для автоматизации обработки данных (нормализации количественных и кодирования категориальных признаков)
 2. С помощью пайплайна были обучены четыре модели: KNeighborsClassifier(), DecisionTreeClassifier(), LogisticRegression() и SVC(), в качестве метрики определяющий наибольшее качество прогнозирования моделей был выбран ROC-AUC метрика и гиперпараметры подирались с помощью GridSearchCV, т.к. данных было не много, GridSearchCV был выбран как наиболее подходящий. Метрика качества модели ROC-AUC была выбрана т.к. количество объектов с целевым признаком было не одинаково, соотношение примерно 60/40.
 3. При отработке пайплайна лучшая по метрикам модель - SVC (support vector classifier) метода опорных векторов.
+
+
+English version
+Machine learning models used to solve the problem:
+1. When searching for the best model, create a pipeline for automating data processing (normalization of quantitative and coding of categorical features)
+2. Four models were trained using the pipeline: KNeighborsClassifier(), DecisionTreeClassifier(), LogisticRegression() and SVC(), ROC-AUC metric was chosen as the metric determining the highest quality of forecasting models and hyperparameters were selected using GridSearchCV, because there was not much data, GridSearchCV was chosen as the most suitable. The quality metric of the ROC-AUC model was chosen because the number of objects with the target feature was not the same, the ratio was about 60/40.
+3. When working out the pipeline, the best metric model is the SVC (support vector classifier) of the support vector method.
