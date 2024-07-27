@@ -47,6 +47,7 @@
 
 
 English version
+
 Machine learning models used to solve the problem:
 1. When searching for the best model, create a pipeline for automating data processing (normalization of quantitative and coding of categorical features)
 2. Four models were trained using the pipeline: KNeighborsClassifier(), DecisionTreeClassifier(), LogisticRegression() and SVC(), ROC-AUC metric was chosen as the metric determining the highest quality of forecasting models and hyperparameters were selected using GridSearchCV, because there was not much data, GridSearchCV was chosen as the most suitable. The quality metric of the ROC-AUC model was chosen because the number of objects with the target feature was not the same, the ratio was about 60/40.
